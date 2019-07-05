@@ -10,7 +10,7 @@ file, You can obtain one at http://mozilla.org/MPL/2.0/.
     typeof define === 'function' && define.amd ? define(['exports', 'backbone', 'lodash', 'jquery'], factory) :
     (global = global || self, factory(global.joint = {}, global.Backbone, global._, global.$));
 }(this, function (exports, Backbone, _, $) { 'use strict';
-
+    var joint = exports;
     Backbone = Backbone && Backbone.hasOwnProperty('default') ? Backbone['default'] : Backbone;
     _ = _ && _.hasOwnProperty('default') ? _['default'] : _;
     $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
